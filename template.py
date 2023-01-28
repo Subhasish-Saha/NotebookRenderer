@@ -39,6 +39,6 @@ for filepath in list_of_files:
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
         with open(filepath, "w") as f:
             pass
-            logging.info(f"Creating a directory at : {filedir} for file : {filename}")
+            logging.info(f"Creating a new file : {filename} at path : {filepath}")
     else:
         logging.info(f"File is already present at : {filepath}")
