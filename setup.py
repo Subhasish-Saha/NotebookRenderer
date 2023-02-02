@@ -1,30 +1,23 @@
-import setuptools
+from setuptools import setup, find_packages
 
-with open("README.md", "r", encoding = "utf-8") as f:
-    long_description = f.read()
-
-
-__version__ = "0.0.0"
-
+with open("README.md", "r", encoding="utf-8") as f:
+    LONG_DESCRIPTION = f.read()
 
 REPO_NAME = "NotebookRenderer"
-AUTHOR_USER_NAME = "Subhasish-Saha"
-SRC_REPO = "NotebookRenderer"
-AUTHOR_EMAIL = 'subhasishsaha007@gmail.com'
+AUTHOR_NAME = "Subhasish-Saha" 
+AUTHOR_EMAIL = "subhasishsaha007@gmail.com"
 
-
-setuptools.setup(
-    name = SRC_REPO,
-    version = __version__,
-    author = AUTHOR_USER_NAME,
+setup(
+    name = REPO_NAME,
+    version = "0.0.0",
+    author = AUTHOR_NAME,
     author_email = AUTHOR_EMAIL,
     description = "A small python package",
-    long_description = long_description,
-    long_description_content = "text/markdown",
-    url = f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
+    long_description = LONG_DESCRIPTION,
+    url = f"https://github.com/{AUTHOR_NAME}/{REPO_NAME}",
     project_urls = {
-        "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
+        "Bug Tracker": f"https://github.com/{AUTHOR_NAME}/{REPO_NAME}/issues"
     },
     package_dir = {"": "src"},
-    packages = setuptools.find_packages(where = "src")
+    packages = find_packages(where="src")
 )
