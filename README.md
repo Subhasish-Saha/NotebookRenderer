@@ -1,1 +1,3 @@
-# IPYNB/Notebook renderer python package
+# Notebook renderer python package
+
+- Subhasish Saha
