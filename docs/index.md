@@ -9,7 +9,7 @@ This package is meant to render Youtube tutorial videos and reference site into 
 ### Installation
 
 !!! note "installation steps"
-    First let's do an easy pip installation of the library by running the following command -
+    Install the library by using the command below :
     ```bash
     pip install NotebookRenderer
     ```
