@@ -3,6 +3,7 @@ site_name: NotebookRenderer
 # defeine TOC or order of website-
 nav:
   - Home: index.md
+  - APIreference: APIreference.md
 
 site_author: Subhasish Saha
   A library for rendering YouTube and reference sites in Jupyter Notebook.
